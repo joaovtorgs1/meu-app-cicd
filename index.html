@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu App</title>
+</head>
+<body>
+  <h1>Calculadora de Soma</h1>
+  <input type="number" id="a"> +
+  <input type="number" id="b">
+  <button onclick="calcular()">Somar</button>
+  <p id="resultado"></p>
+  <script src="soma.js"></script>
+  <script>
+    function calcular() {
+      const a = Number(document.getElementById('a').value);
+      const b = Number(document.getElementById('b').value);
+      document.getElementById('resultado').textContent = 'Resultado: ' + soma(a, b);
+    }
+  </script>
+</body>
+</html>
